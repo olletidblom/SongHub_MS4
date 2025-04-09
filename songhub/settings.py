@@ -29,6 +29,8 @@ ALLOWED_HOSTS = []
 
 SITE_ID = 1 
 
+AUTH_USER_MODEL = 'users.CustomUser'
+
 
 # Application definition
 
@@ -47,7 +49,8 @@ INSTALLED_APPS = [
     #Own apps 
     'users',
     'music',
-    'payments'
+    'payments',
+    'core'
 ]
 
 MIDDLEWARE = [
